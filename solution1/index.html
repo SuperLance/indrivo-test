@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Test</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<div class="page-container">
+    <div class="tabs">
+        <span class="tabs__item" data-tab-for="myFonts" onclick="onTabSelect(event)">My Fonts</span>
+        <span class="tabs__item tabs__item--active" data-tab-for="buyFonts" onclick="onTabSelect(event)">Buy Fonts</span>
+    </div>
+
+    <div class="tab-content" id="myFonts">
+        <p class="m-0">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </div>
+
+    <div class="tab-content tab-content--active" id="buyFonts">
+        <div class="buy-font">
+            <div class="left-section">
+                <label class="card large-card">
+                    <input type="radio" name="font-name" value="Merriweather" checked>
+                    <div class="card__mark">
+                        <div class="card__color-box">
+                            <div class="card__color-box__content bg-green">
+                                M
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <span class="dot"></span>
+                            <span class="card__content__text">Merriweather project is led by Sorkin Type</span>
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <div class="right-section">
+                <label class="card">
+                    <input type="radio" name="font-name" value="Roboto">
+
+                    <div class="card__mark">
+                        <div class="card__color-box">
+                            <div class="card__color-box__content bg-pink">
+                                R
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <span class="dot"></span>
+                            <p class="card__content__text">Roboto doesn't compromise, allowing letters</p>
+                        </div>
+                    </div>
+                </label>
+
+                <label class="card">
+                    <input type="radio" name="font-name" value="Noto Sans">
+
+                    <div class="card__mark">
+                        <div class="card__color-box">
+                            <div class="card__color-box__content bg-blue">
+                                NS
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <span class="dot"></span>
+                            <span class="card__content__text">Noto Sans covers over 30 scripts</span>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
