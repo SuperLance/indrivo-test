@@ -2,10 +2,6 @@ const K = 22;
 const ARR = [10, 15, 18, 24, 38];
 
 const findBestMatch = (k, arr) => {
-	if (typeof k !== 'number') {
-		throw new Error('k must be number');
-	}
-
 	let bestMatch, minDiff;
 	arr.forEach((num, i) => {
 		const diff = Math.abs(num - k);
